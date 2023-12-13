@@ -46,7 +46,7 @@ body{
 .buttons-content #button-style{
     background-color: rgb(255, 255, 255);
     border-style: none;
-    border: solid 3px  rgb(44, 204, 44);
+    border: solid 2px  rgb(44, 204, 44);
     color:  rgb(44, 204, 44);
     height: 50px;
     width: 300px;
@@ -69,9 +69,9 @@ body{
     flex-direction: column;
 }
 .big-effect img{
-    height: 700px;
+    height: 650px;
     position: relative;
-    top: 100px;
+    top: 50px;
     mix-blend-mode: multiply;
 }
 .small-effect img{
@@ -81,6 +81,78 @@ body{
     left: 20px;
     mix-blend-mode: multiply;
 }
+/*TIPOS SECTION*/
+.container-tipos{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    align-items: center;
+
+}
+.content-tipos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-base h1{
+    font-size: 40px;
+    font-family: Questrial;
+    font-weight: 100;
+}
+.style-bar{
+    height: 4px;
+    border-radius: 20px;
+    background-color: rgb(73, 182, 73);
+    width: 400px;
+    margin-top: 5px;
+}
+.content-tipos{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.content-tipos-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text-tipos{
+    margin-right: px;
+}
+.text-content-tipos h1{
+    color: rgb(84, 192, 84);
+    font-family: Questrial;
+    text-align: center;
+}
+.text-content-tipos p{
+    margin-top: 20px;
+    width: 400px;
+    font-family: Questrial;
+    
+}
+.card-tipo{
+    height: 300px;
+    width: 400px;
+    background-color: green;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-tipo img{
+    border-radius: 12px;
+}
+/*IMPACTO SECTION*/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+
 
 
 
@@ -112,7 +184,7 @@ body{
         justify-content: center;
     }
     .text-content img{
-        height: 120px;    
+        height: 100px;    
     }
     .buttons-content{
         display: flex;
@@ -120,10 +192,10 @@ body{
     .buttons-content #button-style{
         background-color: rgb(255, 255, 255);
         border-style: none;
-        border: solid 3px  rgb(44, 204, 44);
+        border: solid 1px  rgb(44, 204, 44);
         color:  rgb(44, 204, 44);
         height: 30px;
-        width: 150px;
+        width: 140px;
         margin-left: 10px;
         margin-right: 10px;
         font-size: 20px;
@@ -144,10 +216,10 @@ body{
         justify-content: center;
     }
     .big-effect img{
-        height: 400px;
+        height: 300px;
         position: relative;
         top: 30px;
-        left: 15px;
+        left: 60px;
         mix-blend-mode: multiply;
     }
     .small-effect img{
