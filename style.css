@@ -130,7 +130,7 @@ body{
     flex-direction: column;
     height: 1000px;
     align-items: center;
-    margin-top: 300px;
+    margin-top: 50px;
 
 }
 @font-face {
@@ -155,7 +155,7 @@ body{
 }
 .content-tipos{
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -207,7 +207,7 @@ body{
     margin-left: 20px;
     margin-right: 10px;
     font-size: 35px;
-    border-radius: 40px;
+    border-radius: 12px;
     cursor: pointer;
     font-family: Questrial;
     font-weight: 100;
@@ -413,28 +413,6 @@ footer{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 900px) {
     .container{
         display: flex;
@@ -486,7 +464,7 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
         font-size: 20px;
-        border-radius: 40px;
+        border-radius: 12px;
         cursor: pointer;
         font-family: Questrial;
         font-weight: 100;
