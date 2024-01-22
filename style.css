@@ -232,7 +232,7 @@ body{
 /*IMPACTO SECTION*/
 .container-impacto{
     height: 1200px;
-    margin-top: 600px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
