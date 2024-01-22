@@ -1,857 +1,328 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/*HOME PAGE*/
-body{
-    display: flex;
-    flex-direction: column;
-}
 @font-face {
-    font-family: Questrial;
-    src: url(fonts/Questrial-Regular.ttf);
-}
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.geral-content{
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-}
-.header{
-
-}
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #ffffff;
-  }
-  
-  .hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    border-radius: 50px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-.header header{
-    display: flex;
-    height: 60px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(59, 179, 59);
-}
-.header header #logo{
-    height: 35px;
-    margin-top: 5px;
-    background-color: white;
-    border-radius: 12px;
-}
-.header header a{
-    font-family: Questrial;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 200%;
-    padding: 0 20px;
-
-}
-.content-text-and-button{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.text-content img{
-    height: 300px;
-    
-}
-.buttons-content{
-    display: flex;
-}
-.buttons-content #button-style{
-    background-color: rgb(255, 255, 255);
-    border-style: none;
-    border: solid 2px  rgb(44, 204, 44);
-    color:  rgb(44, 204, 44);
-    height: 50px;
-    width: 300px;
-    margin-left: 20px;
-    margin-right: 10px;
-    font-size: 35px;
-    border-radius: 40px;
-    cursor: pointer;
-    font-family: Questrial;
-    font-weight: 100;
-   
-}
-.buttons-content #button-style:hover{
-    background-color: rgb(44, 204, 44);
-    color: white;
-    transition: all 0.5s;
-}
-.effects-img{
-    display: flex;
-    flex-direction: column;
-}
-.big-effect img{
-    height: 650px;
-    position: relative;
-    top: 50px;
-    mix-blend-mode: multiply;
-}
-.small-effect img{
-    height: 150px;
-    position: relative;
-    bottom: 130px;
-    left: 20px;
-    mix-blend-mode: multiply;
-}
-/*TIPOS SECTION*/
-.container-tipos{
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    height: 1000px;
-    align-items: center;
-    margin-top: 50px;
-
-}
-@font-face {
-    font-family: Agrandir;
+    font-family: agrandir;
     src: url(fonts/Agrandir-TextBold.otf);
 }
-.content-tipos{
-    display: flex;
-    flex-wrap: wrap;
+@font-face {
+    font-family: space-grotesk;
+    src: url(fonts/SpaceGrotesk-Regular-BF65712b4fdc934.ttf);
 }
-.text-base h1{
-    font-size: 40px;
-    font-family: Questrial;
-    font-weight: 100;
+@font-face {
+    font-family: space-grotesk;
+    src: url(fonts/SpaceGrotesk-Regular-BF65712b4fdc934.ttf);
 }
-.style-bar-{
-    height: 4px;
-    border-radius: 20px;
-    background-color: rgb(73, 182, 73);
-    width: 400px;
-    margin-top: 0;
-}
-.content-tipos{
-    display: flex;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
-}
-.content-tipos-reverse{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 100px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.text-base h1{
-    font-size: 30px;
-}
-.text-content-tipos h1{
-    color: rgb(84, 192, 84);
-    font-family: Agrandir;
-    text-align: center;
-    font-size: 30px;
-}
-.text-content-tipos p{
-    margin-top: 20px;
-    width: 400px;
-    font-family: Questrial;
-    
-}
-.card-tipo{
-    height: 300px;
-    width: 400px;
-    background-color: rgb(44, 204, 44);
-    border-radius: 12px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.card-tipo img{
-    border-radius: 12px;
-}
-.buttons-content-tipos #button-style{
-    background-color: rgb(255, 255, 255);
-    border-style: none;
-    border: solid 2px  rgb(44, 204, 44);
-    color:  rgb(44, 204, 44);
-    height: 50px;
-    width: 300px;
-    margin-left: 20px;
-    margin-right: 10px;
-    font-size: 35px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-family: Questrial;
-    font-weight: 100;
-}
-.buttons-content-tipos #button-style:hover{
-    color: white;
-    background-color:  rgb(44, 204, 44);
-    transition: 0.5s all;
-}
-.buttons-content-tipos{
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.buttons-content-tipos h3{
-    margin-bottom: 20px;
-    font-family: Questrial;
-    font-weight: 100;
-    text-align: center;
-}
-/*IMPACTO SECTION*/
-.container-impacto{
-    height: 1200px;
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.text-impacto-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.text-impacto-content h1{
-    font-family: Questrial;
-    font-weight: 100;
-    width: 600px;
-    text-align: center;
-    font-size: 30px;
-}
-.text-impacto-content p{
-    margin-top: 50px;
-    margin-right: 10px;
-    margin-left: 10px;
-    width: 400px;
-    font-family: Questrial;
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-.content-impacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.text-and-img-impacto{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.text-and-img-impacto iframe{
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 40px;
-    border-radius: 10px;
-}
-.text-impacto-content img{
-    width: 820px;
-    border-radius: 12px;
-    margin-top: 20px;
-}
-/*DESAFIOS SECTION*/
-.container-desafios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.text-content-desafios h1{
-    font-family: Questrial;
-    font-weight: 100;
-    text-align: center;
-
-}
-.text-content-desafios p{
-    font-family: Questrial;
-    font-weight: 100;
-    text-align: center;
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    width: 100%;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-footer{
-    margin-top: 100px;
-    background-color: #40b846;
-    padding: 50px 0;
-}
-.container-footer{
-    max-width: 1400px;
-    padding: 0 4%;
-    margin: auto;
-}
-.row-footer{
+    background-color: black;
+    flex-direction: column;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    justify-content: center;
 }
-
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
+body img{
+    z-index: -4;
+    position: absolute;
+    opacity:30%;
+    width: 100%;
+    bottom: 200px;
+    height: 80vh;
+    filter: blur(5px);
 }
-.footer-col h4{
-    font-size: 22px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: 500;
+.header{
+    font-family: agrandir;
     position: relative;
-    text-transform: uppercase;
+    bottom: 150px;
 }
-.footer-col ul{
-    list-style: none;
-}
-.footer-col ul li{
-    margin: 10px 0;
-}
-.footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-    color: #cecdcd;
-    padding-left: 10px;
-}
-.footer-col .medias-socias{
-    margin-top: 30px;
-}
-.footer-col .medias-socias a{
-    display: inline-flex;
+header{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 40px;
-    margin: 0 10px 10px 0;
-    text-decoration: none;
-    border-radius: 50%;
+}
+header h1{
+    position: relative;
+    bottom: 15px;
+}
+.container{
     color: white;
-    border: 1px solid white;
-    transition: all 0.5s ease;
-}
-.footer-col .medias-socias a i{
-    font-size: 20px;
-}
-
-.footer-col .medias-socias a:hover{
-    color: #415aca;
-    background-color: white;
-}
-.footer-col .form-sub input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    padding: 10px;
+    align-items: center;
+    max-width: 90%;
+    position: relative;
+    top: 200px;
+}
+.content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: agrandir;
+    
+}
+.content-text h1{
+    font-size: 80px;
+}
+.content-text #porcent{
+    position: relative;
+    bottom: 20px;
+}
+.content-text p{
+    font-family: space-grotesk;
+    position: relative;
+    bottom: 30px;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 40px;
+  }
+  
+  .input {
+    min-height: 50px;
+    max-width: 350px;
+    width: 250px;
+    padding: 0 1rem;
+    color: #fff;
     font-size: 15px;
-    outline: none;
-    border: 1px solid white;
-    color: white;
-    background-color: #415aca;
-}
-.footer-col .form-sub input::placeholder{
-    color: white;
-}
-.footer-col .form-sub button{
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px; 
-    font-size: 17px;
-    outline: none;
+    border: 1px solid #ffde59;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+  }
+  
+  .button--submit {
+    min-height: 52px;
+    padding: .5em 1em;
     border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #ffde59;
+    color: #fff;
+    font-size: 15px;
+    font-family: space-grotesk;
+    width: 100px;
     cursor: pointer;
-    color: #415aca;
-    border-radius: 3px;
-    font-weight: bold;
-    background-color: white;        
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color:  black;
+    border: 2px solid #ffde59;
+  }
+  
+  .input:focus, .input:focus-visible {
+    outline: none;
+  }
+.content-local{
+    height: 100vh;
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-/* Responsivo */
-@media (max-width: 800px) {
-    .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
+.card-local{
+    height: 500px;
+    width: 300px;
+    margin-left: 15px; 
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-Right: 15px;
+    transition: 0.5s all ease;
+    cursor: pointer;
 }
-@media (max-width:600px) {
-    .footer-col{
-        width: 100%;
-    }
+.card-local:hover{
+    transform: scale(1.1);
+}
+.card-local h1{
+    font-family: agrandir;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.card-local p{
+    font-size: 15px;
+    font-family: space-grotesk;
+    margin-left: 10px;
+}
+ #casa{
+    background-image: url(images/casa.jpg);
+    
+}
+#viagem{
+    background-image: url(images/viagem.jpg);
+   
+}
+#mar{
+    background-image: url(images/barco.jpg);
+   
 }
 
-@media (max-width: 900px) {
-    .container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+.laoders{
+    position: relative;
+    bottom: 20px;
+}
+.loader {
+    --path: #ffffff;
+    --dot: #00bf63;
+    --dot_2:  #38b6ff;
+    --dot_3:#ffde59;
+    --duration: 3s;
+    width: 44px;
+    height: 44px;
+    position: relative;
+  }
+  
+  .loader:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    background: var(--dot_3);
+    top: 37px;
+    left: 19px;
+    transform: translate(-18px, -18px);
+    animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loader svg rect, .loader svg polygon, .loader svg circle {
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+  
+  .loader svg polygon {
+    stroke-dasharray: 145 76 145 76;
+    stroke-dashoffset: 0;
+    animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg rect {
+    stroke-dasharray: 192 64 192 64;
+    stroke-dashoffset: 0;
+    animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg circle {
+    stroke-dasharray: 150 50 150 50;
+    stroke-dashoffset: 75;
+    animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader.triangle {
+    width: 48px;
+  }
+  
+  .loader.triangle:before {
+    left: 21px;
+    transform: translate(-10px, -18px);
+    animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  @keyframes pathTriangle {
+    33% {
+      stroke-dashoffset: 74;
     }
-    .geral-content{
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
+  
+    66% {
+      stroke-dashoffset: 147;
     }
-    .header header{
-        display: flex;
-        justify-content: center;
-    }
-    .header header a{
-        font-family: Questrial;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 100%;
-        padding: 0 10px;
-    
-    }
-    .header header #logo{
-        height: 25px;
-        margin-left: 10px;
-        margin-top: 5px;
-    }
-    .content-text-and-button{
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .text-content img{
-        height: 100px;    
-    }
-    .buttons-content{
-        display: flex;
-    }
-    .buttons-content #button-style{
-        background-color: rgb(255, 255, 255);
-        border-style: none;
-        border: solid 1px  rgb(44, 204, 44);
-        color:  rgb(44, 204, 44);
-        height: 30px;
-        width: 140px;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 20px;
-        border-radius: 12px;
-        cursor: pointer;
-        font-family: Questrial;
-        font-weight: 100;
-       
-    }
-    .buttons-content #button-style:hover{
-        background-color: rgb(44, 204, 44);
-        color: white;
-        transition: all 0.5s;
-    }
-    .effects-img{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .big-effect img{
-        height: 280px;
-        position: relative;
-        top: 30px;
-        left: 60px;
-        margin-right: 70px;
-        mix-blend-mode: multiply;
-    }
-    .small-effect img{
-        height: 50px;
-        position: relative;
-        bottom: 51px;
-        margin-right: 70px;
-        mix-blend-mode: multiply;
-    }
-    .buttons-content-tipos #button-style{
-        background-color: rgb(255, 255, 255);
-        border-style: none;
-        border: solid 1px  rgb(44, 204, 44);
-        color:  rgb(44, 204, 44);
-        height: 30px;
-        width: 140px;
-        margin-left: 20px;
-        margin-right: 10px;
-        font-size: 15px;
-        border-radius: 40px;
-        cursor: pointer;
-        font-family: Questrial;
-        font-weight: 100;
-    }
-    .container-impacto{
-        height: 1000px;
-        margin-top: 1000px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-    .text-impacto-content h1{
-        font-family: Questrial;
-        font-weight: 100;
-        font-size: 30px;
-        width: 400px;
-    }
-    .text-impacto-content img{
-        width: 400px;
-        border-radius: 12px;
-        margin-top: 20px;
+  
+    100% {
+      stroke-dashoffset: 221;
     }
   }
-
-@media (min-width: 900px) and (max-width: 1100px) {
-    .container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+  
+  @keyframes dotTriangle {
+    33% {
+      transform: translate(0, 0);
     }
-    .geral-content{
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
+  
+    66% {
+      transform: translate(10px, -18px);
     }
-    .header header{
-        display: flex;
-        justify-content: center;
-    }
-    .header header a{
-        font-family: Questrial;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 150%;
-        padding: 0 10px;
-    
-    }
-    .header header #logo{
-        height: 25px;
-        margin-left: 10px;
-        margin-top: 5px;
-    }
-    .content-text-and-button{
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .text-content img{
-        height: 150px;    
-    }
-    .buttons-content{
-        display: flex;
-    }
-    .buttons-content #button-style{
-        background-color: rgb(255, 255, 255);
-        border-style: none;
-        border: solid 1px  rgb(44, 204, 44);
-        color:  rgb(44, 204, 44);
-        height: 50px;
-        width: 200px;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 25px;
-        border-radius: 40px;
-        cursor: pointer;
-        font-family: Questrial;
-        font-weight: 100;
-       
-    }
-    .buttons-content #button-style:hover{
-        background-color: rgb(44, 204, 44);
-        color: white;
-        transition: all 0.5s;
-    }
-    .effects-img{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .big-effect img{
-        height: 300px;
-        position: relative;
-        top: 30px;
-        left: 60px;
-        margin-right: 70px;
-        mix-blend-mode: multiply;
-    }
-    .small-effect img{
-        height: 70px;
-        position: relative;
-        bottom: 101px;
-        margin-right: 100px;
-        mix-blend-mode: multiply;
-    }
-    .buttons-content-tipos #button-style{
-        background-color: rgb(255, 255, 255);
-        border-style: none;
-        border: solid 1px  rgb(44, 204, 44);
-        color:  rgb(44, 204, 44);
-        height: 30px;
-        width: 140px;
-        margin-left: 20px;
-        margin-right: 10px;
-        font-size: 15px;
-        border-radius: 40px;
-        cursor: pointer;
-        font-family: Questrial;
-        font-weight: 100;
-    }.container-impacto{
-        height: 1000px;
-        margin-top: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }   
-  }
-
-  @media (min-width: 1100px) and (max-width: 1300px) {
-    .container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .geral-content{
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-    }
-    .header header{
-        display: flex;
-        justify-content: center;
-    }
-    .header header a{
-        font-family: Questrial;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 150%;
-        padding: 0 10px;
-    
-    }
-    .header header #logo{
-        height: 25px;
-        margin-left: 10px;
-        margin-top: 5px;
-    }
-    .content-text-and-button{
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .text-content img{
-        height: 200px;    
-    }
-    .buttons-content{
-        display: flex;
-    }
-    .buttons-content #button-style{
-        background-color: rgb(255, 255, 255);
-        border-style: none;
-        border: solid 1px  rgb(44, 204, 44);
-        color:  rgb(44, 204, 44);
-        height: 50px;
-        width: 200px;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 25px;
-        border-radius: 40px;
-        cursor: pointer;
-        font-family: Questrial;
-        font-weight: 100;
-       
-    }
-    .buttons-content #button-style:hover{
-        background-color: rgb(44, 204, 44);
-        color: white;
-        transition: all 0.5s;
-    }
-    .effects-img{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .big-effect img{
-        height: 450px;
-        position: relative;
-        top: 30px;
-        left: 60px;
-        margin-right: 100px;
-        mix-blend-mode: multiply;
-    }
-    .small-effect img{
-        height: 70px;
-        position: relative;
-        bottom: 101px;
-        margin-right: 300px;
-        mix-blend-mode: multiply;
-    }
-    .buttons-content-tipos #button-style{
-        background-color: rgb(255, 255, 255);
-        border-style: none;
-        border: solid 1px  rgb(44, 204, 44);
-        color:  rgb(44, 204, 44);
-        height: 50px;
-        width: 200px;
-        margin-left: 20px;
-        margin-right: 10px;
-        font-size: 25px;
-        border-radius: 40px;
-        cursor: pointer;
-        font-family: Questrial;
-        font-weight: 100;
-    }
-    .container-impacto{
-        height: 1000px;
-        margin-top: 450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  
+    100% {
+      transform: translate(-10px, -18px);
     }
   }
-
-  @media (min-width: 1300px) and (max-width: 1600px) {
-    .container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+  
+  @keyframes pathRect {
+    25% {
+      stroke-dashoffset: 64;
     }
-    .geral-content{
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
+  
+    50% {
+      stroke-dashoffset: 128;
     }
-    .header header{
-        display: flex;
-        justify-content: center;
+  
+    75% {
+      stroke-dashoffset: 192;
     }
-    .header header a{
-        font-family: Questrial;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 150%;
-        padding: 0 10px;
-    
+  
+    100% {
+      stroke-dashoffset: 256;
     }
-    .header header #logo{
-        height: 25px;
-        margin-left: 10px;
-        margin-top: 5px;
-    }
-    .content-text-and-button{
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .text-content img{
-        height: 200px;    
-    }
-    .buttons-content{
-        display: flex;
-    }
-    .buttons-content #button-style{
-        background-color: rgb(255, 255, 255);
-        border-style: none;
-        border: solid 1px  rgb(44, 204, 44);
-        color:  rgb(44, 204, 44);
-        height: 50px;
-        width: 200px;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 25px;
-        border-radius: 40px;
-        cursor: pointer;
-        font-family: Questrial;
-        font-weight: 100;
-       
-    }
-    .buttons-content #button-style:hover{
-        background-color: rgb(44, 204, 44);
-        color: white;
-        transition: all 0.5s;
-    }
-    .effects-img{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .big-effect img{
-        height: 450px;
-        position: relative;
-        top: 30px;
-        left: 60px;
-        margin-right: 100px;
-        mix-blend-mode: multiply;
-    }
-    .small-effect img{
-        height: 70px;
-        position: relative;
-        bottom: 101px;
-        margin-right: 300px;
-        mix-blend-mode: multiply;
-    }
-    .buttons-content-tipos #button-style{
-        background-color: rgb(255, 255, 255);
-        border-style: none;
-        border: solid 1px  rgb(44, 204, 44);
-        color:  rgb(44, 204, 44);
-        height: 50px;
-        width: 200px;
-        margin-left: 20px;
-        margin-right: 10px;
-        font-size: 25px;
-        border-radius: 40px;
-        cursor: pointer;
-        font-family: Questrial;
-        font-weight: 100;
-    }
-    .container-impacto{
-        height: 1000px;
-        margin-top: 450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }   
   }
+  
+  @keyframes dotRect {
+    25% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(18px, -18px);
+    }
+  
+    75% {
+      transform: translate(0, -36px);
+    }
+  
+    100% {
+      transform: translate(-18px, -18px);
+    }
+  }
+  
+  @keyframes pathCircle {
+    25% {
+      stroke-dashoffset: 125;
+    }
+  
+    50% {
+      stroke-dashoffset: 175;
+    }
+  
+    75% {
+      stroke-dashoffset: 225;
+    }
+  
+    100% {
+      stroke-dashoffset: 275;
+    }
+  }
+  
+  .loader {
+    display: inline-block;
+    margin: 0 16px;
+  }
+  
+   
